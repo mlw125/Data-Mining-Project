@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> --->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+</head>
+<body>
+
+<div>
+    <table border="0" cellpadding="2" cellspacing="2" width="600px">
+        <tr id="r1">
+            <td>
+               <!--- <form> --->
+                <input type="text" id="query" title="Search" value="" maxlength="1000" size="40">
+                <!--- </form> --->
+            </td>
+            <td>
+                <button id="searchButton">Submit</button>
+            </td>
+        </tr>
+        <tr id="r2">
+            <td>
+                <a href="lucene.html">Lucene</a>
+            </td>
+            <td>
+                Algorithm:
+                <select name="modifiers" id="modifiers">
+                    <option value="0">Cosine: No Stop Word Removal</option>
+                    <option value="1">Cosine: No PreProcessing at All</option>
+                    <option value="2">Jaccard Similarity</option>
+                    <option value="3" selected>Default: Cosine Similarity</option>
+                    <option value="4">Cosine: No Porter's Algorithm</option>
+                </select>
+            </td>
+        </tr>
+        <tr id="r3">
+            <td>
+                Check up to 5 boxes and hit re-roll
+
+                &nbsp;
+                <button id="rerank">ReRank</button>
+            </td>
+        </tr>
+    </table>
+</div>
+<hr>
+<div id="results2"></div>
+<div id="results"></div>
+
+<script type="text/javascript" src="project-code-mlw125.js"></script>
+<script type="text/javascript" src="porter.js"></script>
+</body>
+</html>
