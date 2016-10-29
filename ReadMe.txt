@@ -1,7 +1,5 @@
 Matthew Williams
 
-Web Access: http://cs.txstate.edu/~mlw125/ (The lucene page will not work properly)
-
 Implementation:
 
 -Platform: I did my google search using any browser (at least Firefox and Chrome). Solr I could only get to work on when locally run and with an extension on Google Chrome.
